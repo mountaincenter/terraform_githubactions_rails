@@ -10,6 +10,7 @@ on:
 
 env:
   OIDC_ARN: ${{ secrets.AWS_OIDC_ARN }}
+  TF_VAR_tool: "terrafom"
 
 permissions:
   id-token: write
