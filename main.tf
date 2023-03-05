@@ -1,4 +1,12 @@
-data "aws_caller_identity" "current" {}
-output "account_id" {
-  value = data.aws_caller_identity.current.account_id
+# =============
+# VPC
+# =============
+
+resource "aws_vpc" "vpc" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = "terraform"
+  }
 }

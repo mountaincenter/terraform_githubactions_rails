@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  OIDC_ARN: arn:aws:iam::384657981262:role/GithubActionsTestByOIDC
+  OIDC_ARN: ${{ secrets.AWS_OIDC_ARN }}
 
 permissions:
   id-token: write

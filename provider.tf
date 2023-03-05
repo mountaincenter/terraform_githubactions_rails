@@ -3,7 +3,6 @@
 # ==========================
 
 terraform {
-
   required_version = ">=1.3"
   required_providers {
     aws = {
@@ -18,4 +17,17 @@ terraform {
     dynamodb_table = "terraform-tfstate-yam"
     encrypt        = true
   }
+}
+
+# ===================
+# Provider
+# ===================
+
+provider "aws" {
+  region = "ap-northeast-1"
+}
+
+provider "aws" {
+  alias  = "virginia"
+  region = "us-east-1"
 }
