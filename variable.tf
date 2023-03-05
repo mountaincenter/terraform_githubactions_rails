@@ -1,7 +1,3 @@
-variable "region" {
-  type = string
-}
-
 variable "tool" {
   type = string
 }
@@ -14,7 +10,7 @@ variable "environment" {
   type = string
 }
 
-variable "vpc_cidr" {
+variable "cidr_block" {
   default = "10.0.0.0/21"
 }
 
