@@ -9,3 +9,17 @@ variable "project" {
 variable "environment" {
   type = string
 }
+
+variable "cidr_block" {
+  default = "10.0.0.0/21"
+}
+
+variable "availability_zones" {
+  type    = list(string)
+  default = ["ap-northeast-1a", "ap-northeast-1c"]
+}
+
+variable "azs" {
+  type    = list(string)
+  default = ["1a", "1c"]
+}

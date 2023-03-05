@@ -11,6 +11,8 @@ on:
 env:
   OIDC_ARN: ${{ secrets.AWS_OIDC_ARN }}
   TF_VAR_tool: "terrafom"
+  TF_VAR_project: "tf-rails-fargate"
+  TF_VAR_environment: "production"
 
 permissions:
   id-token: write
