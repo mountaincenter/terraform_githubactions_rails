@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  OIDC_ARN: {{ secrets.AWS_ROLE_ARN }}
+  OIDC_ARN: ${{ secrets.AWS_ROLE_ARN }}
 
 permissions:
   id-token: write
